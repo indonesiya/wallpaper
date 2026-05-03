@@ -1,8 +1,8 @@
-# Aridjaya Wallpaper Website
+# Indonesiya Wallpaper Website
 
 A curated collection of high-quality **HD, Full HD, and 4K wallpapers** designed to enhance your screen with beautiful and modern visuals.
 
-🌐 Live Site: [Aridjaya](https://aridjaya.com/wallpaper) 
+🌐 Live Site: [Indonesiya](https://indonesiya.com/wallpaper) 
 
 ---
 
@@ -59,8 +59,8 @@ New wallpapers are added regularly to keep the collection fresh and trending.
 
 For suggestions, feedback, or inquiries:
 
-- 📧 Email: [support@aridjaya.com](https://aridjaya.com/wallpaper) 
-- 🌐 Website: [Aridjaya](https://aridjaya.com/wallpaper) 
+- 📧 Email: [support@indonesiya.com](https://indonesiya.com/wallpaper) 
+- 🌐 Website: [Indonesiya](https://indonesiya.com/wallpaper) 
 
 ---
 

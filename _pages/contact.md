@@ -16,8 +16,8 @@ You can contact us for:
 
 ## Get in Touch
 
-📧 Email: [support@aridjaya.com](https://aridjaya.com/wallpaper ) 
-🌐 Website: [Aridjaya](https://aridjaya.com/wallpaper ) 
+📧 Email: [support@indonesiya.com](https://indonesiya.com/wallpaper ) 
+🌐 Website: [Indonesiya](https://indonesiya.com/wallpaper ) 
 
 ## Response Time
 

@@ -32,4 +32,4 @@ with beautiful visuals.
 
 Enjoy browsing and find the perfect wallpaper for your screen.
 
-🔗 Visit: [Aridjaya](https://aridjaya.com/wallpaper)
+🔗 Visit: [Indonesiya](https://indonesiya.com/wallpaper)
