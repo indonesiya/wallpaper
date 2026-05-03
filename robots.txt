@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://autotraffic.github.io/sitemap.xml
+Sitemap: https://indonesiya.com/wallpaper/sitemap.xml
