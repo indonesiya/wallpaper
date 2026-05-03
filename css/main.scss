@@ -99,3 +99,11 @@ $on-laptop: 800px;
 .share-floating a:nth-child(4) {
   background: #229ED9;
 }
+
+/* Sticky hanya aktif di desktop */
+@media (max-width: 768px) {
+  .share-floating {
+    display: none;
+    visibility: hidden;
+  }
+}
