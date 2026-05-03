@@ -59,30 +59,59 @@ layout: default
 
       <div class="d-flex flex-wrap gap-2">
 
-        <!-- WhatsApp -->
-        <a href="https://wa.me/?text={{ page.title | url_encode }}%20{{ site.url }}{{ page.url }}" target="_blank"
-          rel="noopener" class="btn btn-success btn-sm d-flex align-items-center gap-2">
-          <i class="fab fa-whatsapp"></i></a>
+        {% assign full_url = site.url | append: site.baseurl | append: page.url %}
+        {% assign encoded_title = page.title | url_encode %}
 
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank"
-          rel="noopener" class="btn btn-primary btn-sm d-flex align-items-center gap-2">
-          <i class="fab fa-facebook-f"></i></a>
+        <div class="d-flex flex-wrap gap-2">
 
-        <!-- Twitter / X -->
-        <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url }}{{ page.url }}"
-          target="_blank" rel="noopener" class="btn btn-dark btn-sm d-flex align-items-center gap-2">
-          <i class="fab fa-x-twitter"></i></a>
+          <!-- WhatsApp -->
+          <a href="https://wa.me/?text={{ encoded_title }}%20{{ full_url }}" target="_blank" rel="noopener"
+            class="btn btn-success btn-sm d-flex align-items-center gap-2">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
 
-        <!-- Telegram -->
-        <a href="https://t.me/share/url?url={{ site.url }}{{ page.url }}&text={{ page.title | url_encode }}"
-          target="_blank" rel="noopener" class="btn btn-info btn-sm d-flex align-items-center gap-2">
-          <i class="fab fa-telegram"></i></a>
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ full_url }}" target="_blank" rel="noopener"
+            class="btn btn-primary btn-sm d-flex align-items-center gap-2">
+            <i class="fab fa-facebook-f"></i>
+            <span>Facebook</span>
+          </a>
 
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank"
-          rel="noopener" class="btn btn-secondary btn-sm d-flex align-items-center gap-2">
-          <i class="fab fa-linkedin-in"></i></a>
+          <!-- Twitter / X -->
+          <a href="https://twitter.com/intent/tweet?text={{ encoded_title }}&url={{ full_url }}" target="_blank"
+            rel="noopener" class="btn btn-dark btn-sm d-flex align-items-center gap-2">
+            <i class="fab fa-x-twitter"></i>
+            <span>X</span>
+          </a>
+
+          <!-- Telegram -->
+          <a href="https://t.me/share/url?url={{ full_url }}&text={{ encoded_title }}" target="_blank" rel="noopener"
+            class="btn btn-info btn-sm d-flex align-items-center gap-2">
+            <i class="fab fa-telegram"></i>
+            <span>Telegram</span>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ full_url }}" target="_blank" rel="noopener"
+            class="btn btn-secondary btn-sm d-flex align-items-center gap-2">
+            <i class="fab fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+          </a>
+
+        </div>
+
+
+        <div class="share-floating">
+          <a href="https://wa.me/?text={{ encoded_title }}%20{{ full_url }}" target="_blank"><i
+              class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ full_url }}" target="_blank"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/intent/tweet?text={{ encoded_title }}&url={{ full_url }}" target="_blank"><i
+              class="fab fa-x-twitter"></i></a>
+          <a href="https://t.me/share/url?url={{ full_url }}&text={{ encoded_title }}" target="_blank"><i
+              class="fab fa-telegram"></i></a>
+        </div>
 
         <!-- Copy Link -->
         <button onclick="copyLink()" class="btn btn-outline-dark btn-sm d-flex align-items-center gap-2">

@@ -60,3 +60,41 @@ $on-laptop: 800px;
     align-self: flex-start;
   }
 }
+
+
+.share-floating {
+  position: fixed;
+  top: 40%;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
+
+.share-floating a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.share-floating a:nth-child(1) {
+  background: #25D366;
+}
+
+.share-floating a:nth-child(2) {
+  background: #1877F2;
+}
+
+.share-floating a:nth-child(3) {
+  background: #000;
+}
+
+.share-floating a:nth-child(4) {
+  background: #229ED9;
+}
