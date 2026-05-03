@@ -68,50 +68,47 @@ layout: default
           <a href="https://wa.me/?text={{ encoded_title }}%20{{ full_url }}" target="_blank" rel="noopener"
             class="btn btn-success btn-sm d-flex align-items-center gap-2">
             <i class="fab fa-whatsapp"></i>
-            <span>WhatsApp</span>
           </a>
 
           <!-- Facebook -->
           <a href="https://www.facebook.com/sharer/sharer.php?u={{ full_url }}" target="_blank" rel="noopener"
             class="btn btn-primary btn-sm d-flex align-items-center gap-2">
             <i class="fab fa-facebook-f"></i>
-            <span>Facebook</span>
           </a>
 
           <!-- Twitter / X -->
           <a href="https://twitter.com/intent/tweet?text={{ encoded_title }}&url={{ full_url }}" target="_blank"
             rel="noopener" class="btn btn-dark btn-sm d-flex align-items-center gap-2">
             <i class="fab fa-x-twitter"></i>
-            <span>X</span>
           </a>
 
           <!-- Telegram -->
           <a href="https://t.me/share/url?url={{ full_url }}&text={{ encoded_title }}" target="_blank" rel="noopener"
             class="btn btn-info btn-sm d-flex align-items-center gap-2">
             <i class="fab fa-telegram"></i>
-            <span>Telegram</span>
           </a>
 
           <!-- LinkedIn -->
           <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ full_url }}" target="_blank" rel="noopener"
             class="btn btn-secondary btn-sm d-flex align-items-center gap-2">
             <i class="fab fa-linkedin-in"></i>
-            <span>LinkedIn</span>
           </a>
 
+          <div class="share-floating">
+            <a href="https://wa.me/?text={{ encoded_title }}%20{{ full_url }}" target="_blank"><i
+                class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ full_url }}" target="_blank"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/intent/tweet?text={{ encoded_title }}&url={{ full_url }}" target="_blank"><i
+                class="fab fa-x-twitter"></i></a>
+            <a href="https://t.me/share/url?url={{ full_url }}&text={{ encoded_title }}" target="_blank"><i
+                class="fab fa-telegram"></i></a>
+          </div>
+
         </div>
 
 
-        <div class="share-floating">
-          <a href="https://wa.me/?text={{ encoded_title }}%20{{ full_url }}" target="_blank"><i
-              class="fab fa-whatsapp"></i></a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u={{ full_url }}" target="_blank"><i
-              class="fab fa-facebook-f"></i></a>
-          <a href="https://twitter.com/intent/tweet?text={{ encoded_title }}&url={{ full_url }}" target="_blank"><i
-              class="fab fa-x-twitter"></i></a>
-          <a href="https://t.me/share/url?url={{ full_url }}&text={{ encoded_title }}" target="_blank"><i
-              class="fab fa-telegram"></i></a>
-        </div>
+
 
         <!-- Copy Link -->
         <button onclick="copyLink()" class="btn btn-outline-dark btn-sm d-flex align-items-center gap-2">
@@ -231,7 +228,7 @@ layout: default
 
 <script>
   function copyLink() {
-    const url = "{{ site.url }}{{ page.url }}";
+    const url = "{{ site.url }}{{ site.baseurl }}{{ page.url }}";
     navigator.clipboard.writeText(url);
     alert("Link copied!");
   }
