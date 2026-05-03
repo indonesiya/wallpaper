@@ -17,9 +17,9 @@ baseurl: "/wallpaper"
 timezone: Asia/Jakarta
 
 future: false
-default-image: logo.jpg
+default-image: /wallpaper/logo.jpg
 
-built-by: autotraffic
+built-by: Indonesiya
 
 copyright:
   name: Wallpaper
