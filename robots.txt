@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://autotraffic.github.io/sitemap.xml
