@@ -13,7 +13,7 @@ layout: null
   {% if post.publish_at == nil or publish_time <= now %}
 
   <url>
-    <loc>{{ site.url }}{{ post.url }}</loc>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     <priority>0.8</priority>
   </url>
